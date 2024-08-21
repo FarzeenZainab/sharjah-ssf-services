@@ -6,7 +6,7 @@ import Navigation from "@/components/navigation";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full py-[18px] z-50">
+    <header className="absolute top-0 left-0 w-full py-[18px] z-50">
       <Container className="flex items-end justify-between">
         <Link href="/">
           {/* logo */}
