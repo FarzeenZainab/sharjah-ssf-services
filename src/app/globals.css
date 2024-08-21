@@ -27,6 +27,7 @@
     @apply font-pf-din;
   }
   h1 {
+    font-size: clamp(3rem, 4.167vw, 10rem); /*preferred size: 80px */
     @apply font-pf-din;
   }
   h2,
@@ -35,5 +36,14 @@
   h5,
   h6 {
     @apply font-abhaya;
+  }
+  h2 {
+    font-size: clamp(2.75rem, 3.438vw, 7rem); /*preferred size: 66px */
+  }
+  h3 {
+    font-size: clamp(1.25rem, 1.25vw, 4rem); /*preferred size: 24px */
+  }
+  p {
+    font-size: clamp(1.15rem, 1.042vw, 1.25rem); /*preferred size: 20px */
   }
 }
