@@ -21,6 +21,7 @@ module.exports = {
 
       "gray-50": "#F7F8F9",
       "gray-100": "#EAEAEA",
+      "gray-200": "#DDDDDD",
     },
     extend: {
       // shadcn defaults

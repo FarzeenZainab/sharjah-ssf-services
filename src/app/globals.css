@@ -103,7 +103,7 @@ p,
   font-size: clamp(1.15rem, 1.042vw, 1.25rem); /*preferred size: 20px */
 }
 .text-small {
-  font-size: 1.125rem;
+  font-size: 1.125rem; /* 18px */
 }
 
 /* 
