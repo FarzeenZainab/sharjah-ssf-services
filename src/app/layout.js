@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 
+import Header from "@/components/header";
+
 import "./globals.css";
 
 export const metadata = {
@@ -38,7 +40,10 @@ const abhaya = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${pfDin.variable} ${abhaya.variable}`}>{children}</body>
+      <body className={`${pfDin.variable} ${abhaya.variable}`}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
