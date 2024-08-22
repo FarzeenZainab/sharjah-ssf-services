@@ -12,9 +12,12 @@ const CustomInput = ({ control, name, label, placeholder, type }) => {
     <FormField
       control={control}
       name={name}
+      className="mb-3"
       render={({ field }) => (
-        <FormItem>
-          <FormLabel>{label}</FormLabel>
+        <FormItem className="flex items-center gap-x-2 mb-3">
+          <FormLabel className="shrink-0 w-[60px] font-normal text-right">
+            {label}
+          </FormLabel>
           <FormControl>
             <Input placeholder={placeholder} type={type} {...field} />
           </FormControl>

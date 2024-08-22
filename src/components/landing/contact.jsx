@@ -4,19 +4,21 @@ import ContactForm from "@/components/contact-form";
 
 const Contact = () => {
   return (
-    <Container>
-      <Section>
-        <div className="grid grid-cols-2">
-          <div>
-            <h2 className="text-primary">
-              Have Questions? Contact Us Using the Inquiry Form
-            </h2>
-            <ContactForm />
+    <div className="bg-gray-50">
+      <Container>
+        <Section>
+          <div className="grid grid-cols-2">
+            <div>
+              <h2 className="text-primary mb-[60px]">
+                Have Questions? Contact Us Using the Inquiry Form
+              </h2>
+              <ContactForm />
+            </div>
+            <div></div>
           </div>
-          <div></div>
-        </div>
-      </Section>
-    </Container>
+        </Section>
+      </Container>
+    </div>
   );
 };
 

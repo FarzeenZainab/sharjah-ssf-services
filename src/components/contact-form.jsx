@@ -52,9 +52,12 @@ const ContactForm = () => {
           name="message"
           label="Message"
           placeholder="Type your message here"
+          className="mb-[50px]"
         />
 
-        <Button type="submit">Submit</Button>
+        <Button type="submit" className="w-[177px]">
+          Submit
+        </Button>
       </form>
     </Form>
   );

@@ -7,17 +7,25 @@ import {
   FormLabel,
   // FormMessage,
 } from "@/components/ui/form";
+import { cn } from "@/utilities/utlis";
 
-const CustomTextarea = ({ name, label, placeholder, control }) => {
+const CustomTextarea = ({ name, label, placeholder, control, className }) => {
   return (
     <FormField
       control={control}
       name={name}
       render={({ field }) => (
-        <FormItem>
-          <FormLabel>{label}</FormLabel>
+        <FormItem className={cn("flex gap-2 mb-3", className)}>
+          <FormLabel className="shrink-0 w-[60px] font-normal text-right mt-6">
+            {label}
+          </FormLabel>
           <FormControl>
-            <Textarea name={name} placeholder={placeholder} {...field} />
+            <Textarea
+              name={name}
+              placeholder={placeholder}
+              className="!h-[232px] resize-none"
+              {...field}
+            />
           </FormControl>
           {/* <FormMessage /> */}
         </FormItem>
