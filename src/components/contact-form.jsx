@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { Form } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import CustomInput from "@/components/custom-input";
+import CustomTextarea from "@/components/custom-textarea";
 
 const ContactForm = () => {
   const { control, ...form } = useForm({
@@ -44,6 +45,13 @@ const ContactForm = () => {
           name="subject"
           label="Subject"
           placeholder="Enter subject"
+        />
+
+        <CustomTextarea
+          control={control}
+          name="message"
+          label="Message"
+          placeholder="Type your message here"
         />
 
         <Button type="submit">Submit</Button>

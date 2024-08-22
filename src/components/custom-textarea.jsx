@@ -1,3 +1,5 @@
+import { Textarea } from "@/components/ui/textarea";
+
 import {
   FormControl,
   FormField,
@@ -5,9 +7,8 @@ import {
   FormLabel,
   // FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
 
-const CustomInput = ({ control, name, label, placeholder, type }) => {
+const CustomTextarea = ({ name, label, placeholder, control }) => {
   return (
     <FormField
       control={control}
@@ -16,7 +17,7 @@ const CustomInput = ({ control, name, label, placeholder, type }) => {
         <FormItem>
           <FormLabel>{label}</FormLabel>
           <FormControl>
-            <Input placeholder={placeholder} type={type} {...field} />
+            <Textarea name={name} placeholder={placeholder} {...field} />
           </FormControl>
           {/* <FormMessage /> */}
         </FormItem>
@@ -25,4 +26,4 @@ const CustomInput = ({ control, name, label, placeholder, type }) => {
   );
 };
 
-export default CustomInput;
+export default CustomTextarea;
