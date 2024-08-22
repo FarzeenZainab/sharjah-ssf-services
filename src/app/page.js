@@ -1,3 +1,4 @@
+import Contact from "@/components/landing/contact";
 import HeroSection from "@/components/landing/hero-section";
 import OurServices from "@/components/landing/our-services";
 import BoardOfDirectors from "@/components/landing/board-of-directors";
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <OurServices />
       <BoardOfDirectors />
+      <Contact />
     </>
   );
 }
