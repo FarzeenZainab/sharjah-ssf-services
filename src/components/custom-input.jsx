@@ -3,11 +3,13 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  // FormMessage,
+  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 
-const CustomInput = ({ control, name, label, placeholder, type }) => {
+import { cn } from "@/utilities/utlis";
+
+const CustomInput = ({ control, name, label, placeholder, type, hasError }) => {
   return (
     <FormField
       control={control}
@@ -19,9 +21,16 @@ const CustomInput = ({ control, name, label, placeholder, type }) => {
             {label}
           </FormLabel>
           <FormControl>
-            <Input placeholder={placeholder} type={type} {...field} />
+            <div className="w-full">
+              <Input
+                placeholder={placeholder}
+                type={type}
+                className={cn(hasError ? "border border-destructive " : "")}
+                {...field}
+              />
+              <FormMessage className="font-normal text-sm mt-1" />
+            </div>
           </FormControl>
-          {/* <FormMessage /> */}
         </FormItem>
       )}
     />

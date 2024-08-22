@@ -36,6 +36,7 @@ const ContactForm = () => {
             name="fullname"
             label="Full name"
             placeholder="Enter your full name"
+            hasError={formState.errors.fullname}
           />
 
           <CustomInput
@@ -44,6 +45,7 @@ const ContactForm = () => {
             label="Email"
             type="email"
             placeholder="Enter email address"
+            hasError={formState.errors.email}
           />
 
           <CustomInput
@@ -51,6 +53,7 @@ const ContactForm = () => {
             name="subject"
             label="Subject"
             placeholder="Enter subject"
+            hasError={formState.errors.subject}
           />
 
           <CustomTextarea
@@ -59,6 +62,7 @@ const ContactForm = () => {
             label="Message"
             placeholder="Type your message here"
             className="mb-[50px]"
+            hasError={formState.errors.message}
           />
 
           <Button type="submit" className="w-[177px]">

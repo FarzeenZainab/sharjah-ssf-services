@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="bg-gray-50">
       <Container>
         <Section>
-          <div className="grid grid-cols-2 items-center gap-x-12">
+          <div className="grid grid-cols-2 items-start gap-x-12">
             <div>
               <h2 className="text-primary mb-[60px]">
                 Have Questions? Contact Us Using the Inquiry Form

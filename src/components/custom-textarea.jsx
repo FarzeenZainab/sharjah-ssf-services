@@ -9,7 +9,14 @@ import {
 } from "@/components/ui/form";
 import { cn } from "@/utilities/utlis";
 
-const CustomTextarea = ({ name, label, placeholder, control, className }) => {
+const CustomTextarea = ({
+  name,
+  label,
+  placeholder,
+  control,
+  className,
+  hasError,
+}) => {
   return (
     <FormField
       control={control}
@@ -23,7 +30,10 @@ const CustomTextarea = ({ name, label, placeholder, control, className }) => {
             <Textarea
               name={name}
               placeholder={placeholder}
-              className="!h-[232px] resize-none"
+              className={cn(
+                "!h-[232px] resize-none",
+                hasError ? "border border-destructive " : ""
+              )}
               {...field}
             />
           </FormControl>
