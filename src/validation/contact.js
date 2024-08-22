@@ -15,7 +15,7 @@ export const contactFormValidations = yup.object({
     .max(150, "Maximum 150 characters are allowed for full name field"),
   message: yup
     .string()
-    .required("Please enter a valid email address")
+    .required("Please write your message in the above field")
     .max(
       250,
       "Please summarize your message. Maximum of 250 characters are allowed"

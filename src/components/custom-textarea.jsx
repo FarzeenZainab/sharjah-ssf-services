@@ -5,7 +5,7 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  // FormMessage,
+  FormMessage,
 } from "@/components/ui/form";
 import { cn } from "@/utilities/utlis";
 
@@ -27,17 +27,19 @@ const CustomTextarea = ({
             {label}
           </FormLabel>
           <FormControl>
-            <Textarea
-              name={name}
-              placeholder={placeholder}
-              className={cn(
-                "!h-[232px] resize-none",
-                hasError ? "border border-destructive " : ""
-              )}
-              {...field}
-            />
+            <div className="w-full">
+              <Textarea
+                name={name}
+                placeholder={placeholder}
+                className={cn(
+                  "!h-[232px] resize-none",
+                  hasError ? "border border-destructive " : ""
+                )}
+                {...field}
+              />
+              <FormMessage className="font-normal text-sm mt-1" />
+            </div>
           </FormControl>
-          {/* <FormMessage /> */}
         </FormItem>
       )}
     />

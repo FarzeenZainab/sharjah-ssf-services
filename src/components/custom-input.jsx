@@ -16,8 +16,8 @@ const CustomInput = ({ control, name, label, placeholder, type, hasError }) => {
       name={name}
       className="mb-3"
       render={({ field }) => (
-        <FormItem className="flex items-center gap-x-2 mb-3">
-          <FormLabel className="shrink-0 w-[60px] font-normal text-right">
+        <FormItem className="flex gap-x-2 mb-3">
+          <FormLabel className="mt-3 shrink-0 w-[60px] font-normal text-right">
             {label}
           </FormLabel>
           <FormControl>
@@ -28,7 +28,7 @@ const CustomInput = ({ control, name, label, placeholder, type, hasError }) => {
                 className={cn(hasError ? "border border-destructive " : "")}
                 {...field}
               />
-              <FormMessage className="font-normal text-sm mt-1" />
+              <FormMessage className="font-normal text-sm mt-2" />
             </div>
           </FormControl>
         </FormItem>
